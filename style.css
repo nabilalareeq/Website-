@@ -1,0 +1,303 @@
+/* إعدادات عامة */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0a0a23;
+    color: #ffffff;
+    direction: rtl;
+}
+
+header {
+    background-color: #1b1b5a;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Merriweather', serif;
+    font-size: 1.5rem;
+    color: #61dafb;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: #61dafb;
+}
+
+/* قسم المقدمة */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #0a0a23, #1b1b5a);
+}
+
+.hero-text h1 {
+    font-size: 1.5rem;
+    font-family: 'Merriweather', serif;
+}
+
+.hero-text h2 {
+    font-size: 1.8rem;
+    color: #61dafb;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #61dafb;
+    color: #0a0a23;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #5bb2e6;
+}
+
+.hero-image img {
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .hero {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        text-align: right;
+    }
+
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+
+    .hero-text h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero-image img {
+        width: 350px;
+    }
+}
+
+/* قسم من أنا */
+.about {
+    padding: 50px 20px;
+    background-color: #1b1b5a;
+    text-align: center;
+}
+
+.about h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 2.2rem;
+}
+
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+@media (min-width: 768px) {
+    .about {
+        text-align: right;
+        padding: 50px 100px;
+    }
+}
+
+/* قسم المقالات */
+.articles {
+    padding: 50px 20px;
+    background-color: #0a0a23;
+    text-align: center;
+}
+
+.articles h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 2.5rem;
+    color: #61dafb;
+}
+
+.article-preview {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    justify-content: right;
+}
+
+.article-preview img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.article-info h3 {
+    font-size: 1.5rem;
+}
+
+.article-info p {
+    font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+    .article-preview {
+        width: 70%;
+        margin: 20px auto;
+    }
+
+    .article-preview img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* الفوتر */
+footer {
+    background-color: #1b1b5a;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+footer .social-media {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer .social-media li a img {
+    width: 20px;
+    height: 20px;
+}
+
+/* تنسيق قسم معاينة المقالات */
+#articles-preview {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#articles-preview h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* تنسيق البطاقات الخاصة بالمقالات */
+.article-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.article-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.article-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.article-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.article-card a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.article-card a:hover {
+    background-color: #2980b9;
+}
+
+/* تنسيق الشبكة (grid) بحيث تكون متجاوبة */
+#articles-preview {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.article-card {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+}
+
+/* تنسيق للجوال */
+@media (max-width: 600px) {
+    .article-card {
+        width: 100%;
+    }
+}
+
+.social-media {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media li {
+    margin: 0 10px;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+}
+
+.social-media a:hover {
+    color: #3498db;
+}
+
+.social-media img {
+    width: 20px;
+    height: 20px;
+}
+ 
